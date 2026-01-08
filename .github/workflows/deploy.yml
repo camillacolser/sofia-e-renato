@@ -29,7 +29,6 @@ jobs:
       - name: Build
         run: npm run build
       - name: Create .nojekyll
-        # This prevents GitHub from trying to process your build with Jekyll
         run: touch dist/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
