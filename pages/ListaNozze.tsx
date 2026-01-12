@@ -14,9 +14,6 @@ const ListaNozze: React.FC = () => {
   return (
     <div className="text-center animate-in fade-in duration-700">
       <div className="mb-12">
-        <svg className="w-16 h-16 mx-auto opacity-30 mb-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" />
-        </svg>
         <h2 className="text-4xl serif-font mb-8">Viaggio di Nozze</h2>
         <div className="max-w-2xl mx-auto space-y-6 text-lg leading-relaxed opacity-80">
           <p>
@@ -49,8 +46,6 @@ const ListaNozze: React.FC = () => {
           {copied ? 'Copiato!' : 'Copia IBAN'}
         </button>
       </div>
-
-      <p className="mt-16 italic opacity-50 serif-font">Grazie di cuore per ogni gesto di affetto.</p>
     </div>
   );
 };

@@ -38,9 +38,6 @@ const App: React.FC = () => {
           {renderPage()}
         </div>
       </main>
-      <footer className="py-8 text-center border-t border-[#1b3022]/10 text-sm opacity-60">
-        <p>&copy; 2025 • Creato con amore</p>
-      </footer>
     </div>
   );
 };
