@@ -29,9 +29,8 @@ const HOTELS: Hotel[] = [
 const DoveDormire: React.FC = () => {
   return (
     <div className="animate-in fade-in duration-700">
-      <h2 className="text-4xl serif-font text-center mb-6">Dove Dormire</h2>
       <p className="text-center opacity-80 mb-12 italic max-w-xl mx-auto">
-        Abbiamo selezionato alcune strutture nelle vicinanze della location per facilitarvi il soggiorno.
+        Queste sono alcune strutture nelle vicinanze che consigliamo.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

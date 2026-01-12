@@ -1,0 +1,91 @@
+.matrimonio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: slide-in-from-bottom 1s ease-out;
+}
+
+.matrimonio-images-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrimonio-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.matrimonio-heading {
+    font-size: 1.875rem;
+    font-family: serif;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.matrimonio-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.matrimonio-subtitle {
+    font-size: 1rem;
+    font-family: serif;
+    font-weight: 300;
+}
+
+.matrimonio-divider {
+    width: 4rem;
+    height: 1px;
+    background-color: rgba(27, 48, 34, 0.3);
+    margin-bottom: 3rem;
+}
+
+.matrimonio-button {
+    margin-top: 4rem;
+    padding: 1rem 2.5rem;
+    border: 1px solid #1b3022;
+    background-color: transparent;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.matrimonio-button:hover {
+    background-color: #1b3022;
+    color: #fcfaf2;
+}
+
+@keyframes slide-in-from-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .matrimonio-images-wrapper {
+        flex-direction: row;
+    }
+
+    .matrimonio-section {
+        width: 50%;
+    }
+}

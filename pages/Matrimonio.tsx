@@ -1,4 +1,5 @@
 import React from 'react';
+import './Matrimonio.css';
 
 interface MatrimonioProps {
     onNext: () => void;
@@ -6,36 +7,39 @@ interface MatrimonioProps {
 
 const Matrimonio: React.FC<MatrimonioProps> = ({onNext}) => {
     return (
-        <div className="flex flex-col items-center text-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            <div className="flex flex-col md:flex-row gap-8 mb-12 w-full justify-center items-center">
-                <div className="relative flex flex-col items-center w-full md:w-1/2">
-                    <h3 className="text-5xl md:text-7xl serif-font font-light mb-4">CERIMONIA</h3>
-
+        <div className="matrimonio-container">
+            <div className="matrimonio-images-wrapper">
+                <div className="matrimonio-section">
+                    <h3 className="matrimonio-heading">CERIMONIA</h3>
                     <img
-                        src="https://picsum.photos/id/433/1200/800"
-                        alt="Matrimonio"
-                        className="w-1/2 h-auto object-cover rounded-sm grayscale-[30%] opacity-90 shadow-xl"
+                        src="/images/eremo.jpeg"
+                        alt="Cerimonia"
+                        className="matrimonio-image"
                     />
+                    <div className="matrimonio-subtitle-container">
+                        <p className="matrimonio-subtitle">EREMO DI SAN ESPEDITO</p>
+                        <p className="matrimonio-subtitle">BADAGNANO</p>
+                        <p className="matrimonio-subtitle">H 11.30</p>
+                    </div>
                 </div>
 
-                <div className="relative flex flex-col items-center w-full md:w-1/2">
-                    <h3 className="text-5xl md:text-7xl serif-font font-light mb-4">RICEVIMENTO</h3>
-
+                <div className="matrimonio-section">
+                    <h3 className="matrimonio-heading">RICEVIMENTO</h3>
                     <img
-                        src="https://picsum.photos/id/433/1200/800"
-                        alt="Matrimonio"
-                        className="w-1/2 h-auto object-cover rounded-sm grayscale-[30%] opacity-90 shadow-xl"
+                        src="/images/cenerara.jpeg"
+                        alt="Ricevimento"
+                        className="matrimonio-image"
                     />
+                    <div className="matrimonio-subtitle-container">
+                        <p className="matrimonio-subtitle">LA CENERARA</p>
+                        <p className="matrimonio-subtitle">H 13.00</p>
+                    </div>
                 </div>
             </div>
 
+            <div className="matrimonio-divider"></div>
 
-            <div className="w-16 h-[1px] bg-[#1b3022]/30 mb-12"></div>
-
-            <button
-                onClick={onNext}
-                className="mt-16 px-10 py-4 border border-[#1b3022] hover:bg-[#1b3022] hover:text-[#fcfaf2] transition-all uppercase tracking-widest text-sm"
-            >
+            <button onClick={onNext} className="matrimonio-button">
                 Conferma Partecipazione
             </button>
         </div>

@@ -53,7 +53,7 @@ const RSVP: React.FC = () => {
 
   return (
     <div className="max-w-md mx-auto animate-in fade-in duration-700">
-      <h2 className="text-4xl serif-font text-center mb-10">Conferma la tua presenza</h2>
+
       <p className="text-center mb-12 opacity-80 italic">Vi preghiamo di confermare entro il 30 Aprile 2025</p>
 
       <form 
@@ -72,7 +72,6 @@ const RSVP: React.FC = () => {
             value={formData.name}
             onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
             className="w-full bg-transparent border-b border-[#1b3022]/40 p-3 focus:outline-none focus:border-[#1b3022] transition-colors"
-            placeholder="es. Mario Rossi"
           />
         </div>
 

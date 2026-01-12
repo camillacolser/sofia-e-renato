@@ -14,13 +14,9 @@ const ListaNozze: React.FC = () => {
   return (
     <div className="text-center animate-in fade-in duration-700">
       <div className="mb-12">
-        <h2 className="text-4xl serif-font mb-8">Viaggio di Nozze</h2>
-        <div className="max-w-2xl mx-auto space-y-6 text-lg leading-relaxed opacity-80">
+        <div className="text-center opacity-80 mb-12 italic max-w-xl mx-auto">
           <p>
-            Il regalo più grande sarà la vostra presenza nel giorno del nostro sì.
-          </p>
-          <p>
-            Tuttavia, se desiderate farci un pensiero, saremmo grati se voleste contribuire al nostro viaggio di nozze: un tour in Giappone alla scoperta di tradizioni millenarie e paesaggi mozzafiato.
+            Se desiderate farci un pensiero, saremmo grati se voleste contribuire al nostro viaggio di nozze. Meta TBD.
           </p>
         </div>
       </div>
