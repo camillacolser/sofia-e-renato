@@ -1,0 +1,30 @@
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-main {
+    flex-grow: 1;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.app-content {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.page-container {
+    animation: fade-in 0.7s ease-out;
+}
+
+.page-intro {
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 5rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,133 @@
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rsvp-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.rsvp-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+.rsvp-input,
+.rsvp-select {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(27, 48, 34, 0.4);
+    padding: 0.75rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+.rsvp-input:focus,
+.rsvp-select:focus {
+    outline: none;
+    border-bottom-color: #1b3022;
+}
+
+.rsvp-button {
+    width: 100%;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.875rem;
+    border: 1px solid #1b3022;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.rsvp-button:not(:disabled):hover {
+    background-color: #1b3022;
+    color: #fcfaf2;
+}
+
+.rsvp-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.rsvp-spinner {
+    animation: spin 1s linear infinite;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+}
+
+.rsvp-error {
+    margin-top: 1rem;
+    color: #991b1b;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.rsvp-success-container {
+    text-align: center;
+    padding: 5rem 0;
+    animation: zoom-in 0.5s ease-out;
+}
+
+.rsvp-success-title {
+    font-size: 2.25rem;
+    font-family: serif;
+    margin-bottom: 1.5rem;
+}
+
+.rsvp-success-message {
+    font-size: 1.125rem;
+    opacity: 0.8;
+}
+
+.rsvp-success-note {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

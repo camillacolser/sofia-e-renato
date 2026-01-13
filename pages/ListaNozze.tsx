@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import './ListaNozze.css';
 
 const ListaNozze: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -12,32 +12,26 @@ const ListaNozze: React.FC = () => {
   };
 
   return (
-    <div className="text-center animate-in fade-in duration-700">
-      <div className="mb-12">
-        <div className="text-center opacity-80 mb-12 italic max-w-xl mx-auto">
-          <p>
-            Se desiderate farci un pensiero, saremmo grati se voleste contribuire al nostro viaggio di nozze. Meta TBD.
-          </p>
-        </div>
+    <div className="page-container">
+      <div className="page-intro">
+        <p>
+          Se desiderate farci un pensiero, saremmo grati se voleste contribuire al nostro viaggio di nozze. Meta TBD.
+        </p>
       </div>
 
-      <div className="max-w-md mx-auto p-10 border border-[#1b3022]/10 bg-white/30 backdrop-blur-sm rounded-sm">
-        <h3 className="text-sm uppercase tracking-widest opacity-60 mb-4">Coordinate Bancarie</h3>
-        <p className="serif-font text-xl md:text-2xl mb-6 font-medium select-all">
+      <div className="lista-nozze-card">
+        <h3 className="lista-nozze-heading">Coordinate Bancarie</h3>
+        <p className="lista-nozze-iban">
           {IBAN}
         </p>
-        <div className="text-sm opacity-70 space-y-2 mb-8">
+        <div className="lista-nozze-details">
           <p>Intestato a: Giulia Bianchi e Marco Neri</p>
           <p>Causale: Regalo Matrimonio Giulia e Marco</p>
         </div>
-        
+
         <button
           onClick={copyToClipboard}
-          className={`px-8 py-3 text-xs uppercase tracking-widest transition-all ${
-            copied 
-              ? 'bg-[#1b3022] text-[#fcfaf2]' 
-              : 'border border-[#1b3022] hover:bg-[#1b3022] hover:text-[#fcfaf2]'
-          }`}
+          className={`lista-nozze-button ${copied ? 'copied' : 'default'}`}
         >
           {copied ? 'Copiato!' : 'Copia IBAN'}
         </button>

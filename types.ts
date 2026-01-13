@@ -1,9 +1,9 @@
 
 export enum Page {
-  Matrimonio = 'Matrimonio',
+  Matrimonio = 'MATRIMONIO',
   RSVP = 'RSVP',
-  DoveDormire = 'Dove dormire',
-  ListaNozze = 'Lista nozze'
+  DoveDormire = 'DOVE DORMIRE',
+  ListaNozze = 'LISTA NOZZE'
 }
 
 export interface Hotel {
